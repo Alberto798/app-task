@@ -1,0 +1,77 @@
+<app-card >
+<div>
+    <button [class.active]="selected" (click)="onSelectUser()">
+        <img [src]="userPath" [alt]="user.name">
+        <span>{{user.name}}</span>
+    </button>
+</div>
+</app-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SENZA SEGNALI -->
+
+<!-- <div>
+  <button (click)="onSelectUser()">
+    <img [src]="userPath" [alt]="userSelected.name" /> -->
+    <!-- utilizzando la property binding posso inserire dinamicamente l'immagine dell'utente selezionato anadandola a prendere dalla proprietà che ho creato inserendo anche la rotta per trovare le immagini -->
+    <!-- <span>{{ userSelected.name }}</span> -->
+    <!-- utilizzando la string interpolation posso inserire dinamicamente il nome dell'utente selezionato anadandolo a prendere dalla proprietà che ho creato -->
+ <!-- </button>
+</div>   -->
+
+<!-- CON I SEGNALI -->
+
+<!-- <div>
+  <button (click)="onSelectUser()">
+    <img [src]="userPath()" [alt]="userSelected().name" /> -->
+    <!-- utilizzando la property binding posso inserire dinamicamente l'immagine dell'utente selezionato anadandola a prendere dalla proprietà che ho creato inserendo anche la rotta per trovare le immagini-->
+    <!-- <span>{{ userSelected().name }}</span> -->
+    <!-- utilizzando la string interpolation posso inserire dinamicamente il nome dell'utente selezionato anadandolo a prendere dalla proprietà che ho creato-->
+  <!-- </button>
+</div> -->
